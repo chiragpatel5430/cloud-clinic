@@ -48,6 +48,7 @@
   text-align: center;
   border-radius: 100%;
   padding-top: 12px;
+  transition: all 0.5s;
 }
 .widget-contact h6 {
   font-weight: 500;
@@ -55,6 +56,20 @@
 }
 .widget-contact h6 i {
   color: #e12454;
+}
+.widget .divider {
+  height: 3px;
+}
+.divider {
+  width: 40px;
+  background-color: #e12454;
+  height: 5px;
+
+  /* border: 2px solid blue; */
+}
+
+.list-unstyled li a {
+  text-decoration: none;
 }
 .subscribe {
   position: relative;
@@ -120,4 +135,20 @@
 
 .section {
   padding: 100px 0;
+}
+
+.fontAwesome {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10.5%;
+  /* color: rgb(80, 80, 255); */
+}
+
+.list-inline-item a:hover {
+  background-color: white;
+  color: rgb(80, 80, 255);
+}
+
+.upArrow {
+  color: white;
 }

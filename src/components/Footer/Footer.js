@@ -1,6 +1,15 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../images/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedin,
+  FaLongArrowAltUp,
+  FaPhoneAlt,
+} from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -23,17 +32,19 @@ const Footer = () => {
                 <ul class="list-inline footer-socials mt-4">
                   <li class="list-inline-item">
                     <a href="https://www.facebook.com/themefisher">
-                      <i class="icofont-facebook"></i>
+                      <FaFacebookF className="fontAwesome" />
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a href="https://twitter.com/themefisher">
                       <i class="icofont-twitter"></i>
+                      <FaTwitter className="fontAwesome" />
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a href="https://www.pinterest.com/themefisher/">
                       <i class="icofont-linkedin"></i>
+                      <FaLinkedin className="fontAwesome" />
                     </a>
                   </li>
                 </ul>
@@ -41,10 +52,9 @@ const Footer = () => {
             </div>
 
             <div class="col-lg-2 col-md-6 col-sm-6">
-              <div class="widget mb-5 mb-lg-0">
+              <div class="widget mb-5 mb-lg-0" style={{ textAlign: "left" }}>
                 <h4 class="text-capitalize mb-3">Department</h4>
                 <div class="divider mb-4"></div>
-
                 <ul class="list-unstyled footer-menu lh-35">
                   <li>
                     <a href="#!">Surgery </a>
@@ -66,7 +76,7 @@ const Footer = () => {
             </div>
 
             <div class="col-lg-2 col-md-6 col-sm-6">
-              <div class="widget mb-5 mb-lg-0">
+              <div class="widget mb-5 mb-lg-0" style={{ textAlign: "left" }}>
                 <h4 class="text-capitalize mb-3">Support</h4>
                 <div class="divider mb-4"></div>
 
@@ -91,14 +101,22 @@ const Footer = () => {
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="widget widget-contact mb-5 mb-lg-0">
+              <div
+                class="widget widget-contact mb-5 mb-lg-0"
+                style={{ textAlign: "left" }}
+              >
                 <h4 class="text-capitalize mb-3">Get in Touch</h4>
                 <div class="divider mb-4"></div>
 
                 <div class="footer-contact-block mb-4">
                   <div class="icon d-flex align-items-center">
-                    <i class="icofont-email mr-3"></i>
-                    <span class="h6 mb-0">Support Available for 24/7</span>
+                    <i class="icofont-email mr-3">
+                      <AiOutlineMail />
+                    </i>
+
+                    <span class="h6 mb-0" style={{ marginLeft: "5px" }}>
+                      Support Available for 24/7
+                    </span>
                   </div>
                   <h4 class="mt-2">
                     <a href="mailto:support@email.com">Support@email.com</a>
@@ -107,8 +125,12 @@ const Footer = () => {
 
                 <div class="footer-contact-block">
                   <div class="icon d-flex align-items-center">
-                    <i class="icofont-support mr-3"></i>
-                    <span class="h6 mb-0">Mon to Fri : 08:30 - 18:00</span>
+                    <i class="icofont-support mr-3">
+                      <FaPhoneAlt />
+                    </i>
+                    <span class="h6 mb-0" style={{ marginLeft: "5px" }}>
+                      Mon to Fri : 08:30 - 18:00
+                    </span>
                   </div>
                   <h4 class="mt-2">
                     <a href="tel:+23-345-67890">+23-456-6588</a>
@@ -146,7 +168,8 @@ const Footer = () => {
             <div class="row">
               <div class="col-lg-4">
                 <a class="backtop scroll-top-to reveal" href="#top">
-                  <i class="icofont-long-arrow-up"></i>
+                  {/* <i class="icofont-long-arrow-up"></i> */}
+                  <FaLongArrowAltUp className="upArrow" />
                 </a>
               </div>
             </div>

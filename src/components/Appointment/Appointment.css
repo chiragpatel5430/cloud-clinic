@@ -1,0 +1,116 @@
+.appoinment-content {
+  position: relative;
+}
+.appoinment-content img {
+  width: 85%;
+}
+.appoinment-content .emergency {
+  position: absolute;
+  content: "";
+  right: 10px;
+  bottom: 20px;
+  background: #223a66;
+  padding: 48px;
+}
+.appoinment-content .emergency h2 {
+  color: #fff;
+}
+.appoinment-content .emergency i {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.appoinment-form {
+  margin-top: 40px;
+}
+.appoinment-form .form-control {
+  background: #f4f9fc;
+  height: 55px;
+  border-color: rgba(0, 0, 0, 0.05);
+}
+.appoinment-form textarea.form-control {
+  height: auto;
+}
+.title-color {
+  color: #223a66;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.secondary-bg {
+  background: #223a66;
+}
+
+.section-title {
+  margin-bottom: 70px;
+}
+.section-title h2 {
+  color: #223a66;
+}
+
+.text-lg {
+  font-size: 50px;
+}
+
+.gray-bg {
+  background: #f4f9fc;
+}
+
+@media (max-width: 480px) {
+  .text-lg {
+    font-size: 28px;
+  }
+}
+@media (max-width: 400px) {
+  .text-lg {
+    font-size: 28px;
+  }
+}
+
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+}
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #223a66;
+}
+
+.page-title {
+  padding: 120px 0px 70px 0px;
+  position: relative;
+}
+.page-title .block h1 {
+  color: #fff !important;
+}
+.page-title .block p {
+  color: #fff !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+.bg-1 {
+  background: url("../../images/22.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background: #223a66;
+}
+
+.text-white {
+  color: #fff !important;
+}

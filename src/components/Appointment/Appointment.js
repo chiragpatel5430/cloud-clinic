@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "./Appointment.css";
+import { RiCustomerService2Fill } from "react-icons/ri";
 
 const Appointment = () => {
   return (
@@ -14,8 +15,10 @@ const Appointment = () => {
           <div class="row">
             <div class="col-md-12">
               <div class="block text-center">
-                <span class="text-white">Book your Seat</span>
-                <h1 class="text-capitalize mb-5 text-lg">Appoinment</h1>
+                <span class="text-white" style={{ color: "white" }}>
+                  Book your Seat
+                </span>
+                <h1 class="text-capitalize mb-5 text-lg">Appointment</h1>
               </div>
             </div>
           </div>
@@ -29,7 +32,9 @@ const Appointment = () => {
             <div class="col-lg-4">
               <div class="mt-3">
                 <div class="feature-icon mb-3">
-                  <i class="icofont-support text-lg"></i>
+                  <i class="icofont-support text-lg">
+                    <RiCustomerService2Fill />
+                  </i>
                 </div>
                 <span class="h3">Call for an Emergency Service!</span>
                 <h2 class="text-color mt-3">+84 789 1256 </h2>
@@ -86,7 +91,7 @@ const Appointment = () => {
                         <input
                           name="date"
                           id="date"
-                          type="text"
+                          type="date"
                           class="form-control"
                           placeholder="dd/mm/yyyy"
                         />

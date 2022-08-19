@@ -113,4 +113,25 @@
 
 .text-white {
   color: #fff !important;
+  position: relative !important;
+  font-weight: 500;
+  z-index: 3;
+}
+
+.btn-main {
+  background: #e12454;
+  color: #fff;
+  border-color: #e12454;
+}
+.btn-main:hover {
+  background: #223a66 !important;
+  color: #fff;
+  border-color: #223a66;
+}
+
+.block h1 {
+  color: #fff !important;
+  position: relative !important;
+  font-weight: 500;
+  z-index: 3;
 }
